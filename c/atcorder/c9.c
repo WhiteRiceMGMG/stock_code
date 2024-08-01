@@ -1,16 +1,24 @@
 #include <stdio.h>
 
 int main(){
-    int n,a,b,dig,sum=0,i;
+    int n,a,b,dig,sum=0,i,total=0;
     scanf("%d %d %d",&n,&a,&b);
-    for(i=a;i<=b;i++){
-        while(n){
-            dig=n%10;
+    for(i=1;i<=n;i++){
+        if(i>=10){
+            int m=i,sum=0;
+        while(m){
+            dig=m%10;
             sum=sum+dig;
-            n=n/10;
+            m=m/10;
+        }
+        }else{
+            sum=i;
+        }
+        if(i>=a&&i<=b){
+            total=total+sum;
         }
     }
 
-    printf("%d",sum);
+    printf("%d",total);
 
 }
