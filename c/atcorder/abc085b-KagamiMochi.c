@@ -10,14 +10,14 @@ int main(void){
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    for(i=0;i<100;i++){
+    for(i=0;i<101;i++){
         b[a[i]]=a[i];
-        printf("%d\n",b[i]);
+        printf("%d,",b[i]);
     }
-    for(i=0;i<100;i++){
+    for(i=0;i<101;i++){
         if(b[i]!=0){
             count++;
-            printf("count++\n");
+//          printf("count++\n");
         }
     }
     printf("%d",count);
