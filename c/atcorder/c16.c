@@ -22,7 +22,7 @@ int main(void){
     
     return 0;
 }
-//void bucket_sort(int *numbers, int number_of_item)
+void bucket_sort(int *numbers, int number_of_item)
 {
     int buckets[M];
     int i; /* ループカウント変数 */
@@ -32,7 +32,7 @@ int main(void){
     for (i = 0; i < M; i++) {
         buckets[i] = 0;
     }
-    /* putting in bucket 元のデータをバケットに入れる*/
+    /* putting in bucket 元のデータをバケットに入れる*/ 
     for (i = 0; i < number_of_item; i++) {
         buckets[numbers[i]] = numbers[i];
     }
