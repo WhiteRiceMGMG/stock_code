@@ -3,7 +3,7 @@
 int main(void){
     int a, b, c, x;
     int i, j, k;
-    int total = 0; // ここで total を 0 に初期化します。
+    int total = 0; 
 
     scanf("%d", &a);
     scanf("%d", &b);

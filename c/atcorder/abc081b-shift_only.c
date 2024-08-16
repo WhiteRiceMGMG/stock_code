@@ -16,7 +16,7 @@ int main(void){
             break;
         }
         for(i=0;i<n;i++){
-            a[i]=a[i]/2;
+            a[i]=a[i]/2; 
         }
         total++;
     }
